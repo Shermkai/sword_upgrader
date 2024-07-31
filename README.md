@@ -10,7 +10,7 @@ context = zmq.Context()                 # Set up environment to create sockets
 socket = context.socket(zmq.REQ)        # Create request socket
 socket.connect("tcp://localhost:5555")  # Connect to the respective network port
 
-socket.send_string(coin_count)  # Send a coin amount to the microservice
+socket.send_string(coin_count)  # Send a coin amount (must be a string) to the microservice
 ```
 
 #### Main Program Receive Example
