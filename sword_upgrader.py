@@ -22,6 +22,7 @@ while True:
 
     if len(message) > 0:
         if message == 'Q':
+            socket.send_string("Closed")
             break
 
         # If we receive a number, call the above function
